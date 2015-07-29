@@ -35,12 +35,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Latin Modern Roman Demi 10 Regular", "Times New Roman", serif;
+  font-family: $heading-font-family;
   font-weight: 400;
-}
-
-pre, code {
-  font-family: Inconsolata, Consolas, "Courier New", monospace
 }
 
 pre {
@@ -58,20 +54,20 @@ pre {
 }
 
 .site-header {
-  border-bottom: 1px solid rgb(253, 113, 252); 
+  border-bottom: thin solid rgb(253, 113, 252);
 }
 
 .site-header .social-icons a, .site-header nav a {
-  color: #59008E;
+  color: $light-purple;
 }
 
 a {
-  color: #59008E;
+  color: $light-purple;
   opacity: 0.8;
 }
 
 a:hover {
-  color: #59008E;
+  color: $light-purple;
   opacity: 1; 
 }
 
@@ -79,21 +75,9 @@ article.post-content a {
   text-decoration: underline;
 }
 
-body, form {
-  font-family: "Latin Modern Roman 10 Regular", "Times New Roman", serif;
-}
-
 body {
   background: #A200FF;
   // background: rgb(253, 113, 252);
-}
-
-footer {
-  border-top: 1px solid rgb(123, 125, 204);
-}
-
-footer, footer .wrap {
-  color: rgb(123, 125, 204);
 }
 
 .site-wrap {
@@ -102,7 +86,7 @@ footer, footer .wrap {
 
 .highlight, .gist-syntax .highlight {
   background: #EBEDFF;
-  border: 1px solid rgb(123, 125, 204);
+  border: thin solid rgb(123, 125, 204);
 }
 
 .footer, .site-wrap:after {
